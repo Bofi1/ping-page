@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="font-LibreFranklin px-5">
+    <article class="flex flex-col items-center my-20">
+      <main class="flex flex-col items-center gap-7">
+        <img class="h-5" src="images/logo.svg" alt="logo" />
+        <div class="flex flex-col items-center">
+          <h1 class="text-[#A1A1A1] font-[200] text-2xl mb-2">
+            We are launching <span class="font-bold text-black">soon!</span>
+          </h1>
+          <h2 class="text-sm text-[#4F5256]">Subscribe and get notified</h2>
+        </div>
+
+        <form class="w-full flex flex-col gap-3">
+          <input
+            class="text-[#CED3E3] py-3 pl-5 rounded-full border-2 border-[#CAD5FB] appearance-none outline-none w-full text-sm"
+            type="text"
+            placeholder="Your email address..."
+            name="error"
+          />
+          <label
+            class="text-[10px] -mt-[6.5px] mb-3 text-center text-red-500"
+            for="error"
+            >Please provied a valid email address</label
+          >
+          <button
+            class="bg-[#4C7BF4] text-white flex justify-center py-3 rounded-full shadow-xl w-full text-sm"
+            type="submit"
+          >
+            Notify Me
+          </button>
+        </form>
+      </main>
+      <img class="mt-14" src="images/illustration-dashboard.png" alt="" />
+      <footer class="flex flex-col gap-8 mt-20">
+        <section class="flex justify-center gap-4">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/"
+            class="flex justify-center items-center p-2 rounded-[100%] border-2 border-[#ECEDF3]"
+          >
+            <img
+              class="w-5 h-5"
+              src="images/facebook.png"
+              alt="facebook-icon"
+            />
+          </a>
+
+          <a
+            target="_blank"
+            href="https://www.x.com/"
+            class="flex justify-center items-center p-2 rounded-[100%] border-2 border-[#ECEDF3]"
+          >
+            <img class="w-5 h-5" src="images/twitter.png" alt="twitter-icon" />
+          </a>
+
+          <a
+            target="_blank"
+            href="https://www.instagram.com/"
+            class="flex justify-center items-center p-2 rounded-[100%] border-2 border-[#ECEDF3]"
+          >
+            <img
+              class="w-5 h-5"
+              src="images/instagram.png"
+              alt="instagram-icon"
+            />
+          </a>
+        </section>
+        <span class="text-[#B4B4B4]"
+          >© Copyright Ping. All rights reserved</span
+        >
+      </footer>
+    </article>
+  </body>
+</html>
