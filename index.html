@@ -1,36 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="desktop:h-full flex justify-center">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="font-LibreFranklin px-5">
+  <body class="font-LibreFranklin px-5 desktop:max-w-[1000px]">
     <article class="flex flex-col items-center my-20">
-      <main class="flex flex-col items-center gap-7">
+      <main class="flex flex-col items-center gap-7 desktop:gap-10">
         <img class="h-5" src="images/logo.svg" alt="logo" />
         <div class="flex flex-col items-center">
-          <h1 class="text-[#A1A1A1] font-[200] text-2xl mb-2">
+          <h1 class="text-[#A1A1A1] font-[200] text-2xl mb-2 desktop:text-5xl">
             We are launching <span class="font-bold text-black">soon!</span>
           </h1>
-          <h2 class="text-sm text-[#4F5256]">Subscribe and get notified</h2>
+          <h2 class="text-sm text-[#4F5256] desktop:text-xl desktop:mt-2">
+            Subscribe and get notified
+          </h2>
         </div>
 
-        <form class="w-full flex flex-col gap-3">
-          <input
-            class="text-[#CED3E3] py-3 pl-5 rounded-full border-2 border-[#CAD5FB] appearance-none outline-none w-full text-sm"
-            type="text"
-            placeholder="Your email address..."
-            name="error"
-          />
-          <label
-            class="text-[10px] -mt-[6.5px] mb-3 text-center text-red-500"
-            for="error"
-            >Please provied a valid email address</label
-          >
+        <form class="w-full flex flex-col gap-3 desktop:flex-row">
+          <div class="flex flex-col relative desktop:w-[70%]">
+            <input
+              class="text-[#CED3E3] py-3 pl-5 rounded-full border-2 border-[#CAD5FB] appearance-none outline-none w-full text-sm"
+              type="text"
+              placeholder="Your email address..."
+              name="error"
+            />
+            <label
+              class="text-[10px] -mt-[6.5px] mb-3 text-center text-red-500 desktop:mt-1 desktop:text-start desktop:ml-5"
+              for="error"
+              >Please provied a valid email address</label
+            >
+          </div>
           <button
-            class="bg-[#4C7BF4] text-white flex justify-center py-3 rounded-full shadow-xl w-full text-sm"
+            class="bg-[#4C7BF4] text-white flex justify-center py-3 rounded-full shadow-xl w-full text-sm desktop:w-[30%] desktop:h-[48px]"
             type="submit"
           >
             Notify Me
