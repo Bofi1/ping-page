@@ -19,22 +19,29 @@
           </h2>
         </div>
 
-        <form class="w-full flex flex-col gap-3 desktop:flex-row">
+        <form
+          class="w-full flex flex-col gap-3 desktop:flex-row"
+          id="form"
+          novalidate
+        >
           <div class="flex flex-col relative desktop:w-[70%]">
             <input
+              required
               class="text-[#CED3E3] py-3 pl-5 rounded-full border-2 border-[#CAD5FB] appearance-none outline-none w-full text-sm"
-              type="text"
+              id="inputForm"
+              type="email"
               placeholder="Your email address..."
               name="error"
             />
             <label
-              class="text-[10px] -mt-[6.5px] mb-3 text-center text-red-500 desktop:mt-1 desktop:text-start desktop:ml-5"
+              id="error"
+              class="text-[10px] mb-3 text-center text-red-500 desktop:mt-1 desktop:text-start desktop:ml-5 hidden"
               for="error"
               >Please provied a valid email address</label
             >
           </div>
           <button
-            class="bg-[#4C7BF4] text-white flex justify-center py-3 rounded-full shadow-xl w-full text-sm desktop:w-[30%] desktop:h-[48px]"
+            class="bg-[#4C7BF4] text-white flex justify-center py-3 rounded-full shadow-xl w-full text-sm desktop:w-[30%] desktop:h-[48px] hover:bg-[#608af3]"
             type="submit"
           >
             Notify Me
@@ -76,10 +83,12 @@
             />
           </a>
         </section>
-        <span class="text-[#B4B4B4]"
+        <span class="text-[#B4B4B4] desktop:mb-20"
           >© Copyright Ping. All rights reserved</span
         >
       </footer>
     </article>
+
+    <script src="app.js"></script>
   </body>
 </html>

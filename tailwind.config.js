@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        desktop: "1000px",
+        desktop: "900px",
       },
       fontFamily: {
         LibreFranklin: ["'Libre Franklin'", "sans-serif"],
